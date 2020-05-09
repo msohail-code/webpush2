@@ -7,6 +7,6 @@ let vapidKeys = {
 
 push.setVapidDetails('mailto:test@localsite.com',vapidKeys.publicKey,vapidKeys.privateKey)
 
-let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/e6jVnjd-zRY:APA91bG1oHd3GCRf4bpwcnIvKa5n4WDMWt6ZVLxZ8K8OQE1WhB_qPBWtPlk6_jPeHyzItYZq86gztSAMNzBRwGwK9Gq280Kh6qr4YOE7-H1NCNSwDIy22flL0XGvTPC1Q4XHE4ANWu6S","expirationTime":null,"keys":{"p256dh":"BNiFKWDovjGoALi3dI4keozmdwQpS4ubloZ0ylfsyAz8UmX-7XojRHp0zBL8Cwl2wwUFFfpj1bZAz_iuuqi4jWY","auth":"Kc1H-XeY-rQB_42qMwOJow"}}
+let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/cCb2elmoH9Y:APA91bEdo-gm7SyjPDj1ZuPgiuwqL7kXWWkkgqlG-JI8AiOZ5nGJFDJDVGPNt-aOBYD8Oyz7hliiBv5YcXI20H1HYdamwoJyQYSifaVpVKj5_RBcYc3WRQEpEBHy3cImLAHsr-oITcHd","expirationTime":null,"keys":{"p256dh":"BHvOWUWttybHpyHBbfU0OkvF3z95mipZKn7A8zllcb3Tdl1XkJSKTVhR8bXWj2iJPqu7IHLtG3MO2_XGeFwwa28","auth":"2r5oYQjpEWem8ktP8-PE6Q"}}
 
-push.sendNotifcation(sub, 'Test Message')
+push.sendNotifcation(sub, 'Test Message');
