@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web push notification</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.5/push.js"></script>
+</head>
+<body>
+	<center>
+		<h1>Web push notification</h1>
+		<button onclick="send();">Send Notification</button>
+		<button onclick="get();">Get Permission</button>
+	</center>
+
+<script type="text/javascript">
+	
+  function get(){
+    	Notification.requestPermission();
+    }
+
+function send(){
+
+	Push.create('This is the title of notification!',{
+    	body: "This is little description of notification!",
+    	icon: 'images/icon.png',
+    	timeout: 5000,
+    	onclick:function(){
+    		window.open("https://github.com/sagiegurari/angular-web-notification");
+    	}
+    });
+}
+
+    
+
+</script>
+</body>
+</html>
